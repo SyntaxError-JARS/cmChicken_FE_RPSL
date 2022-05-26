@@ -4,6 +4,7 @@ import CustomerLogin from "./components/customer/customer-login";
 import CustomerRegister from "./components/customer/customer-register";
 import CustomerUpdate from "./components/customer/customer-update";
 import CustomerWelcome from "./components/customer/customer-welcome";
+import NavBar from "./components/navbar";
 
 function App() {
   /* React-router-dom provides us the ability to emulate multipage 
@@ -18,9 +19,10 @@ function App() {
               <Route>   -- path : loc
       */}
       <BrowserRouter>
-{/*     Because every pages start from customer-welcome...
+        {/*     Because every pages start from customer-welcome...
             using Route exact path (location) & element      
         <CustomerWelcome /> */}
+        <NavBar />
       <Routes>
         <Route path="login" element={<CustomerLogin />} />
         <Route path="register" element={<CustomerRegister />} />
