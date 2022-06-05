@@ -1,7 +1,8 @@
 import axios from "axios";
-import { useRef, useState } from "react";
+import {useState } from "react";
+import React from "react";
 
-export default function ViewOrders(){
+export default function ViewOrder(){
 
     const [orderBody, setOrderBody] = useState();
 

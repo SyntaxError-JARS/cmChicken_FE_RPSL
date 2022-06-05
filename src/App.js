@@ -5,12 +5,14 @@ import DeleteCreditCard from "./components/creditcard/DeleteCreditCard";
 import UpdateCreditCard from "./components/creditcard/UpdateCreditCard.jsx";
 import CustomerLogIn from "./components/customer/CustomerLogin";
 import CustomerRegister from "./components/customer/CustomerRegister.jsx";
+import CustomerUpdate from "./components/customer/CustomerUpdate.jsx";
 import CreateMenuItem from "./components/menu/CreateMenuItem";
 import DeleteMenuItem from "./components/menu/DeleteMenu";
 import MenuItem from "./components/menu/MenuItem";
 import UpdateMenu from "./components/menu/UpdateMenu.jsx";
 import NavBar from "./components/NavBar";
 import CreateOrder from "./components/order/CreateOrder.jsx";
+import ViewOrder from "./components/order/ViewOrder.jsx";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -31,6 +33,10 @@ function App() {
             <Route path="create-order"element={<CreateOrder />} />
             <Route path="update-menu"element={<UpdateMenu />} />
             <Route path="register" element={<CustomerRegister/>} />
+            <Route path="update-customer"element={<CustomerUpdate />} />
+            <Route path="view-order"element={<ViewOrder />} />
+            
+
             
 
 

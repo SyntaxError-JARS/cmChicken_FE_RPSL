@@ -27,7 +27,7 @@ export default function DeleteCreditCard(){
 
     return(
     <>
-    <h3>Delete your creditcard? If yes, Please enter your Credit Card Number and press the delete credit card button.</h3>
+    <h3>Delete your creditcard.</h3>
         <br></br>
         <br></br>
         <br></br>

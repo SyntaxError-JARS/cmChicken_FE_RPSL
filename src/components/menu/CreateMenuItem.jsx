@@ -8,7 +8,7 @@ export default function CreateMenuItem(){
     const proteinInput = useRef();
     const is_substitutableInput = useRef();
 
-    const url = "http://localhost:8080/cmChicken/menu/"
+    const url = "http://localhost:8080/cmChicken/menu"
 
     async function createmenuItems(){
 
