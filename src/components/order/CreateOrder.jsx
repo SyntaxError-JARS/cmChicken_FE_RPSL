@@ -10,12 +10,11 @@ export default function CreateOrder(){
     const customer_usernameInput = useRef();
    
 
-    const url = " http://localhost:8080/cmChicken/menuorder"
+    const url = " http://localhost:8080/cmChicken"
 
     async function addOrder(){
 
         const order = {
-            //id: defaultValue,
             menuItem: menu_itemInput.current.value,
             comment: m_commentInput.current.value,
             isFavorite: is_favoriteInput.current.value,
@@ -25,7 +24,7 @@ export default function CreateOrder(){
 
 
         try{
-            const response = await axios.post(`${url}/menuorder/createorder` , order )
+            const response = await axios.post(`${url}/menuorder`, order )
             console.log(response)
             console.log(response.data)
         }catch(error){

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useRef } from "react";
-import { AdminNavBar } from "../Admin/AdminNavBar"; 
+
 
 export default function CreateMenuItem(){
     const item_nameInput = useRef();
@@ -20,7 +20,7 @@ export default function CreateMenuItem(){
         } 
 
         try{
-            const response = await axios.post(`${url}/menu/createmenuitem` , menuItem )
+            const response = await axios.post(`${url}/createmenuitem` , menuItem )
             console.log(response)
             console.log(response.data)
         }catch(error){

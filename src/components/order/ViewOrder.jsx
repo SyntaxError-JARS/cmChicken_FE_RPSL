@@ -53,7 +53,7 @@ export default function ViewOrders(){
                 <th>Customer Username</th>
                 </tr>
             </thead>
-            <tbody>{ordersBody}</tbody>
+            <tbody>{orderBody}</tbody>
         </table>
     </>
     )

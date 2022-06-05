@@ -12,7 +12,7 @@ export default function CustomerRegister(){
     const url = "http://localhost:8080/cmChicken/auth "
 
 
-    async function customerReg(){
+    async function customerRegister(){
         
 
         const customer = {
@@ -50,7 +50,7 @@ export default function CustomerRegister(){
         <br></br>
         <input type="password" placeholder="Enter password" ref={cpasswordInput}></input>
         <br></br>
-        <button onClick={customerReg}>Register</button>
+        <button onClick={customerRegister}>Register</button>
 
 
         </>
