@@ -12,13 +12,9 @@ export default function NavBar(){
             <button onClick={() => navigate("register")}>Register</button>
             <button onClick={() => navigate("login")}>Login</button>
             <button onClick={() => navigate("view-menu")}>View Menu</button>
-            <button onClick={() => navigate("create-menu")}>Create Menu</button>
-            <button onClick={() => navigate("delete-menu")}>Delete Menu</button>
             <button onClick={() => navigate("order-history")}>Order History</button>
             <button onClick={() => navigate("order")}>Create Order</button>
-            <button onClick={() => navigate("add-card")}>Add a Credit Card</button>
-            <button onClick={() => navigate("update-card")}>Update your Credit Card</button>
-            <button onClick={() => navigate("delete-card")}>Delete a Credit Card</button>
+            
 
 
         </nav>

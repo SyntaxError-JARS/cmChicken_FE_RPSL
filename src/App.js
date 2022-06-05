@@ -1,13 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AdminDAshBoard from "./components/Admin/AdminDashboard.jsx";
+import AdminDashboard from "./components/Admin/AdminDashboard.jsx";
 import AddCreditCard from "./components/creditcard/AddCreditCard";
 import DeleteCreditCard from "./components/creditcard/DeleteCreditCard";
 import UpdateCreditCard from "./components/creditcard/UpdateCreditCard.jsx";
 import CustomerLogIn from "./components/customer/CustomerLogin";
+import CustomerRegister from "./components/customer/CustomerRegister.jsx";
 import CreateMenuItem from "./components/menu/CreateMenuItem";
 import DeleteMenuItem from "./components/menu/DeleteMenu";
 import MenuItem from "./components/menu/MenuItem";
+import UpdateMenu from "./components/menu/UpdateMenu.jsx";
 import NavBar from "./components/NavBar";
+import CreateOrder from "./components/order/CreateOrder.jsx";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -23,8 +26,13 @@ function App() {
             <Route path="delete-card" element={<DeleteCreditCard />} />
             <Route path="login" element={<CustomerLogIn />} />
             <Route path="delete-menu" element={<DeleteMenuItem />} />
-            <Route path="admin" element={<AdminDAshBoard />} />
+            <Route path="admin" element={<AdminDashboard />} />
             <Route path="update-card"element={<UpdateCreditCard />} />
+            <Route path="create-order"element={<CreateOrder />} />
+            <Route path="update-menu"element={<UpdateMenu />} />
+            <Route path="register" element={<CustomerRegister/>} />
+            
+
 
          </Routes>
         

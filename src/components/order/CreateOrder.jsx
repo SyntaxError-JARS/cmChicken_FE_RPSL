@@ -1,4 +1,5 @@
-
+import axios from "axios";
+import { useRef } from "react";
 
 export default function CreateOrder(){
 
@@ -9,7 +10,7 @@ export default function CreateOrder(){
     const customer_usernameInput = useRef();
    
 
-    const url = " "
+    const url = " http://localhost:8080/cmChicken/menuorder"
 
     async function addOrder(){
 
@@ -24,7 +25,7 @@ export default function CreateOrder(){
 
 
         try{
-            const response = await axios.post(`${url}/order/createorder` , order )
+            const response = await axios.post(`${url}/menuorder/createorder` , order )
             console.log(response)
             console.log(response.data)
         }catch(error){

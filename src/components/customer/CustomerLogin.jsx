@@ -7,7 +7,7 @@ export default function CustomerLogIn() {
     const usernameInput = useRef();
     const cpasswordInput = useRef();
     const navigate = useNavigate();
-    const url = "http://localhost:8080/cmChicken/auth"
+    const url = "http://localhost:8080/cmChicken"
 
     async function login() {
         

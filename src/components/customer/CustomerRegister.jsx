@@ -38,7 +38,6 @@ export default function CustomerRegister(){
 
     return(
         <>
-        <NavBar />
         <h3>Welcome, Please Enter Your Information Below To Sign Up</h3>
         <br></br>
         <br></br>
